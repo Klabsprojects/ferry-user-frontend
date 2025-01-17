@@ -1,0 +1,29 @@
+[
+  { "title": "Home", "path": "/", "icon": "fas fa-home", "theme": "primary" },
+  { "title": "Aboutus", "path": "/aboutus", "icon": "fas fa-home", "theme": "primary" },
+  { "title": "Contact", "path": "/contact", "icon": "fas fa-home", "theme": "primary" },
+  { "title": "PP", "path": "/pp", "icon": "fas fa-home", "theme": "primary" },
+  { "title": "TNC", "path": "/tnc", "icon": "fas fa-home", "theme": "primary" },
+  {
+    "title": "Login",
+    "path": "/auth",
+    "icon": "fas fa-unlock",
+    "theme": "primary",
+    "state": {
+      "isAuth": false
+    }
+  },
+  {
+    "title": "Name",
+    "path": "/dashboard",
+    "icon": "fas fa-unlock",
+    "theme": "primary",
+    "children": [
+      { "title": "Dashboard", "path": "/dashboard" },
+      { "title": "Logout", "path": "/logout" }
+    ],
+    "state": {
+      "isAuth": true
+    }
+  }
+]

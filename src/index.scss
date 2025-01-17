@@ -1,0 +1,236 @@
+@import 'assets/scss/variables';
+
+html,
+body,
+#root{
+  height: 100%;
+  // width: 98%;
+  padding: 0;
+  margin: 0;
+  // font-family: 'Raleway', sans-serif;
+  // font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#root{
+  overflow-y: scroll;
+}
+
+#root > div {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  // font-family: 'Raleway', sans-serif;
+  // font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.font-raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bg-primary-dark {
+  background-color: theme-color('primary-dark');
+}
+
+.btn-social {
+  width: 32px;
+  height: 32px;
+  margin: auto;
+  padding: 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.cursor-pointer:hover {
+  cursor: pointer !important;
+}
+
+.cursor-pointer:hover > :not(marquee) {
+  cursor: pointer !important;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='date']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none;
+}
+
+// themeing 
+$theme-colors: (
+  "primary-alt": #14274e,
+);
+
+@import '~bootstrap/scss/bootstrap.scss';
+
+.carousel-control-prev{
+  left: -2%;
+  width: 2%;
+}
+
+.carousel-control-next{
+  right: -2%;
+  width: 2%;
+}
+.h-5{
+  height:4vh;
+  align-items:center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.input-group-text-active {
+  background-color: #aaaeb3
+}
+
+.navb-title {
+  max-width: 70%;
+  overflow-wrap: break-word;
+}
+
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+@import 'assets/scss/pages', 'assets/scss/layout', 'assets/scss/products',
+  'assets/scss/auth', 'assets/scss/navbar', 'assets/scss/floating', 'assets/scss/content', 'assets/scss/extras' ;
+
+// react pro sidebar
+
+$sidebar-bg-color: #1d2d52;
+$icon-bg-color: #394867;
+
+@import '~react-pro-sidebar/dist/scss/styles.scss';
+
+@include media-breakpoint-down(sm){
+  .pro-sidebar {
+    width: 100vw;
+    min-width: 100vw;
+
+    &.collapsed {
+        width: 30px;
+        min-width: 30px;
+
+        .pro-menu {
+          .pro-menu-item {
+            > .pro-inner-item { 
+
+              // font-size: 8px;
+              padding-left: 11px;
+
+              > .pro-icon-wrapper {
+                width: 17px;
+                min-width: 17px;
+                height: 17px;
+                line-height: 17px;
+              }
+            }
+          }
+        }
+    }
+
+  }
+}
+
+// react datepicker
+
+.react-datetime-picker__wrapper {
+  border: none !important;
+}
+
+.react-datetime-picker__calendar-button {
+  display: none !important;
+}
+
+.no-time {
+
+  .react-datetime-picker__inputGroup__minute{
+    display: none;
+  }
+
+  .react-datetime-picker__inputGroup__hour{
+    display: none;
+
+    +.react-datetime-picker__inputGroup__divider{
+      display: none;
+
+      +.react-datetime-picker__inputGroup__leadingZero{
+        display: none;
+      }
+    }
+  }
+}
+
+#no-more-tables {
+  overflow-x: scroll;
+}
+
+#HomePage {
+  .card {
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
+
+.swal-css-class {
+  color: green;
+}
+
+
+
+
+@media screen and (min-width: 480px) {
+  .title-class{
+    font-size: large;
+  }
+  .table-font {
+    font-size: x-small;
+  }
+  .table-head {
+    font-size: small;
+  }
+  .table-class {
+    font-size: medium;
+  }
+  .btn-title {
+    font-size: small;
+    padding: 0%;
+  }
+
+
+}

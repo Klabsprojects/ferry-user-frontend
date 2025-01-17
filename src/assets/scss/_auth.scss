@@ -1,0 +1,65 @@
+#AuthPage {
+
+  // height: 100%;
+
+  // background-image: url('../img/ferry.jpg') !important;
+  // background-size: cover !important;
+  // background-position: center !important;
+  // background-attachment: fixed !important;
+
+  /*Checkboxes styles*/
+  input[type=checkbox]+label {
+    display: block;
+    margin: 0.1em;
+    cursor: pointer;
+    padding: 0.1em;
+  }
+
+  input[type=checkbox] {
+    display: none;
+  }
+
+  input[type=checkbox]+label:before {
+    content: "\2714";
+    border: 0.1em solid #000;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 1.67em;
+    height: 1.67em;
+    padding-left: 0.2em;
+    padding-bottom: 0.1em;
+    margin-right: 0.2em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+  }
+
+  input[type=checkbox]+label:active:before {
+    transform: scale(0);
+  }
+
+  input[type=checkbox]:checked+label:before {
+    background-color: MediumSeaGreen;
+    border-color: MediumSeaGreen;
+    color: #fff;
+  }
+
+  input[type=checkbox]:disabled+label:before {
+    transform: scale(1);
+    border-color: #aaa;
+  }
+
+  input[type=checkbox]:checked:disabled+label:before {
+    transform: scale(1);
+    background-color: #bfb;
+    border-color: #bfb;
+  }
+
+}
+
+.boatbg{
+  background-image: url('../img/ferry2.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+}

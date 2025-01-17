@@ -1,0 +1,31 @@
+@import 'variables';
+
+html,
+body,
+#root,
+#root>div {
+  // height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#LoaderPage {
+  $primary-color: theme-color("primary");
+  height: 100%;
+  @import '~loaders.css/src/animations/ball-scale-multiple.scss';
+
+  .loader-container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loader-hidden {
+    display: none;
+  }
+
+  .loader-active {
+    display: block;
+  }
+}
